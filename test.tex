@@ -1,0 +1,92 @@
+% documentclass gibt an, was für eine art von dokument es ist:
+% - article
+% - report (mehrere artikel)
+% - book
+% - leaflet
+% - letter
+% - beamer
+% - ...
+\documentclass{article}
+
+% sprachpaket neue & alte deutsche rechtschreibung, [] → optionale parameter
+\usepackage[ngerman,german]{babel}
+% importiert encoding paket
+\usepackage[utf8]{inputenc}
+% stellt umlaute richtig dar, nicht mehr als 2 seperate symbole übereinander
+\usepackage[T1]{fontenc}
+
+\usepackage{lipsum} % lorem ipsum generator
+
+% setzt seitenränder und papiergröße
+\usepackage[left=25mm,right=20mm,top=45mm,bottom=25mm,paper=a4paper]{geometry}
+
+\setlength{\parindent}{0pt} % entfernt bzw. verändert indentierung neuer absätze
+\setlength{\parskip}{6pt} % verändert abstand neuer absätze
+
+% metadaten
+\title{Mein tolles \LaTeX-Dokument}
+\author{Häsemeyer}
+\date{2026-05-14}
+
+\begin{document}
+
+% erstellt eine titelseite mit inhaltsverzeichnis
+\maketitle
+\tableofcontents
+\newpage
+
+\section{Abschnitt}
+
+\subsection{Teilabschnitt}
+
+\subsubsection{wow...}
+
+Dies ist mein {\em großartiger} Abschnitt. Lorem Ipsum dolor sit amet.
+Bla bla bla bla aisjdoiasd paojdoaisjd sdljfsd flkds jflksjd fsdf sdfkjsdf.
+sjdhfkjsdf sjd hfljds hfkjds hfkjdshf ljsdhfsjdf hasljdkfh lkjsdflks.
+
+oasdjf lksadfj sakldfj lsadjflkdsafkasdjf sklda fjklsajfd ksljfdsdf ff.
+ksaldjf sakdjf lksajd fölks jfdaölkajs dfölksajdfjdsfjjsdfjjd ddd. \"a \"f % \"a → ä
+
+% test zeilenumbruch
+Rindfleischettiketierungsgerät Rindfleischettiketierungsgerät Rindfleischettiketierungsgerät Rindfleischettiketierungsgerät Rindfleischettiketierungsgerät Rindfleischettiketierungsgerät
+
+Ein weiser Mann$^2$ sagte einst:
+
+\[ E=mc^2 \]
+
+\section{Schrifteigenschaften}
+
+\subsection{Schriftgrößen}
+
+{\tiny tiny}
+{\scriptsize scriptsize}
+{\footnotesize footnotesize}
+{\small small}
+{\normalsize normalsize}
+{\large large}
+{\Large Large}
+{\LARGE LARGE}
+{\huge huge}
+{\Huge Huge}
+
+\subsection{Font Families}
+
+{\sffamily Sans-Serif}
+{\ttfamily Typewriter}
+
+\subsection{Formatierung}
+
+{\bfseries Bold}
+{\itshape kursiv}
+\underline{unterstrichen}
+
+\newpage
+
+\section{Neue Seite}
+
+Lol.
+\lipsum[1-2]
+
+\end{document}
+

@@ -1,0 +1,29 @@
+\documentclass{scrlttr2} % KOMA-Skript Brief
+\LoadLetterOption{briefvorlage} % custom Briefvorlage
+\LoadLetterOption{briefabsender} % custom Absenderdaten
+
+\usepackage{lipsum}
+
+\begin{document}
+\begin{letter}{
+	Max Mustermann\\
+	BRD GmbH\\
+	Beispielstraße 0\\
+	12345 Stadt
+}
+
+\setkomavar{subject}{Wichtiger Betreff}
+
+\opening{Sei gegrüßt,}
+
+zehn trilliarden €s
+
+%\lipsum[1-10]
+
+\closing{Mit unfreundlichen Grüßen}
+
+\ps PS: Eiermaler.
+
+\end{letter}
+\end{document}
+

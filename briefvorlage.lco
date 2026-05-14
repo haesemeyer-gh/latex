@@ -1,0 +1,35 @@
+\ProvidesFile{briefvorlage.lco}
+
+\setlength{\parindent}{0pt}
+
+\setplength{firstheadvpos}{2.5cm} % kopfzeile abstand oben
+\setplength{sigbeforevskip}{1.8cm} % signatur vertikaler abstand
+\renewcommand{\raggedsignature}{\raggedright} % signatur ausrichten
+
+\usepackage[ngerman,german]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+\usepackage{lmodern} % schriftart
+
+%\usepackage{graphicx}
+%\setkomavar{fromlogo}{\includegraphics{brieflogo.png}}
+
+\KOMAoptions{
+	paper=a4,
+	fontsize=12pt,
+	DIV=15,
+	parskip=full,
+	pagenumber=botright,
+	fromalign=right,
+	fromemail=true,
+	fromurl=true,
+	fromphone=false,
+	fromfax=false,
+	%fromlogo=true,
+	%fromrule=afteraddress,
+	enlargefirstpage=false,
+	backaddress=true,
+	foldmarks=false % markierungen am seitenrand wo der brief geknickt werden muss
+}
+

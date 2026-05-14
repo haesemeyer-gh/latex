@@ -1,0 +1,9 @@
+\babel@toc {german}{}\relax 
+\contentsline {section}{\numberline {1}Abschnitt}{2}{}%
+\contentsline {subsection}{\numberline {1.1}Teilabschnitt}{2}{}%
+\contentsline {subsubsection}{\numberline {1.1.1}wow...}{2}{}%
+\contentsline {section}{\numberline {2}Schrifteigenschaften}{2}{}%
+\contentsline {subsection}{\numberline {2.1}Schriftgrößen}{2}{}%
+\contentsline {subsection}{\numberline {2.2}Font Families}{2}{}%
+\contentsline {subsection}{\numberline {2.3}Formatierung}{2}{}%
+\contentsline {section}{\numberline {3}Neue Seite}{3}{}%

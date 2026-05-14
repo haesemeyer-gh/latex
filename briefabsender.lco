@@ -1,0 +1,18 @@
+\ProvidesFile{briefabsender.lco}
+
+\setkomavar{date}{\today}
+\setkomavar{place}{Absendeort}
+
+\setkomavar{fromname}{Häsemeyer}
+
+\setkomavar{fromemail}[E-Mail:\enskip]{{\ttfamily haesemeyer@mailbox.org}}
+\setkomavar{fromurl}[Web:\enskip]{{\ttfamily osthase.tech}}
+%\setkomavar{fromphone}[Telefon:\enskip]{+49 1234 5678890}
+
+\setkomavar{fromaddress}{
+	Beispielstraße 9b\\
+	00000 Stadt
+}
+
+\setkomavar{signature}{Häsemeyer}
+
