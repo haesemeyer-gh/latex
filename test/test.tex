@@ -17,6 +17,8 @@
 
 \usepackage{lipsum} % lorem ipsum generator
 
+\usepackage{multicol} % für mehrere spalten an text
+
 % setzt seitenränder und papiergröße
 \usepackage[left=25mm,right=20mm,top=45mm,bottom=25mm,paper=a4paper]{geometry}
 
@@ -72,21 +74,29 @@ Ein weiser Mann$^2$ sagte einst:
 
 \subsection{Font Families}
 
-{\sffamily Sans-Serif}
-{\ttfamily Typewriter}
+\begin{enumerate}
+	\item {\sffamily Sans-Serif}
+	\item {\ttfamily Typewriter}
+\end{enumerate}
 
 \subsection{Formatierung}
 
-{\bfseries Bold}
-{\itshape kursiv}
-\underline{unterstrichen}
+\begin{itemize}
+	\item {\bfseries Bold}
+	\item {\itshape kursiv}
+	\item \underline{unterstrichen}
+\end{itemize}
 
 \newpage
+
+\begin{multicols}{2}
 
 \section{Neue Seite}
 
 Lol.
 \lipsum[1-2]
+
+\end{multicols}
 
 \end{document}
 

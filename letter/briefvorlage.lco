@@ -10,7 +10,10 @@
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 
-\usepackage{lmodern} % schriftart
+% schriftart
+%\usepackage{lmodern} % serif
+\usepackage{tgpagella} % serif
+\usepackage{inconsolata} % monospace
 
 %\usepackage{graphicx}
 %\setkomavar{fromlogo}{\includegraphics{brieflogo.png}}

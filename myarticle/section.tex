@@ -1,0 +1,139 @@
+\section{Zeichen \& Symbole}
+
+\begin{multicols}{2}
+
+\subsection{Tippkonventionen}
+
+Dr.\ Doktor schreibt man mit \verb`.\ `, sodaß der Punkt nicht zu viel Platz läßt.
+
+Dies ist ein "`wunderschöner Text"', 'sehr' toll ist -- das freut mich.
+
+``curly'' und \frqq {\em französisch}\flqq
+
+»Das its einfach s\"o, ›we\"il esn't so ist‹, sagte er.«\footnote{ach was weiß ich}
+
+\subsection{Besonderer Text \& Blöcke}
+
+%\hyphenation{AAAAAAAAAAAAAAAAAAAAAAAAAAA-BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB}
+AAAAAAAAAAAAAAAAAAAAAAAAAAA\-BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+
+\lipsum[1]
+
+\begin{quote}
+Nun ist dies wohl ein Zitat. Huh. \blindtext
+\end{quote}
+
+\begin{lstlisting}[language=go,caption=Beispiel-Programm in Go]
+for (int i = 0; i < len(arr); i++) {
+	// Kommentar
+	if (arr[i] == 1) {
+		fmt.Println("no.")
+	}
+}
+\end{lstlisting}
+
+\subsection{Mathematik}
+
+23409823942,00€
+
+$3409823942.00$
+
+$3409823942{,}00$
+
+$\num{1,23}$
+
+\[
+	\mathrm{e}^2 = \mathrm{konstanten \rightarrow mathrm} \sin
+\]
+
+\[
+	\text{dies ist text in AMS TeX Math} \operatorname{ggT}(1, 1) = 1
+\]
+
+\subsection{Sprachen}
+
+\blindtext
+
+\begin{otherlanguage}{english}
+\subsection{English Section}
+This is an English section.
+\tableofcontents
+\end{otherlanguage}
+
+\end{multicols}
+
+\section{Schrifteigenschaften \& Listen}
+
+\subsection{Schriftgrößen}
+
+\begin{enumerate}
+	\item {\tiny tiny}
+	\item {\scriptsize scriptsize}
+	\item {\footnotesize footnotesize}
+	\item {\small small}
+	\item {\normalsize normalsize}
+	\item {\large large}
+	\item {\Large Large}
+	\item {\LARGE LARGE}
+	\item {\huge huge}
+	\item {\Huge Huge}
+\end{enumerate}
+
+\subsection{Font Families}
+
+\begin{itemize}
+	\item {\sffamily Sans-Serif}
+	\item {\ttfamily Typewriter}
+\end{itemize}
+
+\subsection{Formatierung}
+
+\begin{itemize}
+	\item {\bfseries Bold} \\ Neue Zeilen in Auflistung
+	\item {\itshape kursiv}
+	\item {\em emphasis}
+	\item \underline{unterstrichen}
+	\item {\color{red} \sout{strikethrough} \xout{xout} + Farbe}
+\end{itemize}
+
+\section{Tabellen}
+
+So sieht eine Tabelle aus:
+
+\begin{table}[tbh] % placement specifier
+	\caption{tolle großartige Tabelle}
+	\centering
+	\begin{tabular}{|c|ll||r|}
+		\hline
+		Eins & Zwei & Drei & Vier \\
+		\hline
+		Drei & Vier & Fünf & neun \\
+		Laaaaang & sehr laaaaang & super laaaang & akjshdjasd \\
+		\hline
+		\multicolumn{4}{|c|}{Alle} \\
+		\hline
+		Laaaaang & sehr laaaaang & super laaaang & akjshdjasd \\
+		\hline
+		1 & \multicolumn{2}{c||}{2, 3} & 4 \\
+		\hline
+		Laaaaang & sehr laaaaang & super laaaang & akjshdjasd \\
+		\hline
+	\end{tabular}
+\end{table}
+
+Das war die Tabelle.
+
+\section{Bilder}
+
+\blindtext
+
+\begin{figure}[tbh] % placement specifier
+	\centering
+	\includegraphics[width=\textwidth]{testimg.jpg} % width=0.5\textwidth
+	\caption{Ein Beispielbild: das Logo des LaTeX Project}
+\end{figure}
+
+\includegraphics[scale=0.3]{testimg.jpg}
+
+\blindtext
+
