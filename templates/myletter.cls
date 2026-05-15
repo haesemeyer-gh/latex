@@ -13,6 +13,10 @@
 	paper=a4paper
 ]{geometry}
 
+% Absatzformatierung Überschreiben
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{12pt}
+
 % Standard-Optionen
 \providecommand\lettertitle{Betreff}
 \providecommand\place{\relax}
@@ -31,6 +35,7 @@
 \providecommand\toaddrc{Sendeweg 0}
 \providecommand\toaddrd{99999 Musterfurt}
 \providecommand\toaddre{}
+% Delimiter (werden automatisch Geändert)
 \providecommand\placedatedelim{}
 \providecommand\namedatedelim{, }
 \providecommand\backaddrdelim{; }
@@ -53,6 +58,8 @@
 \newcommand\settoaddrc[1]{\renewcommand\toaddrc{#1}}
 \newcommand\settoaddrd[1]{\renewcommand\toaddrd{#1}}
 \newcommand\settoaddre[1]{\renewcommand\toaddre{#1}}
+% zusätzlicher Befehl zum Ändern der Signatur
+\newcommand\siginstead[2]{\renewcommand\myname{#1} \renewcommand\letterdate{#2} \renewcommand\namedatedelim{}}
 
 % Brief Gesamte Kopfzeile mit Daten aus Variablen
 \newcommand{\letterhead}{
@@ -108,7 +115,7 @@
 	\begin{flushright}
 	#1\placedatedelim #2 \medskip
 	\end{flushright}
-	{\large\bfseries #3} \\\\\\
+	{\large\bfseries \underline{#3}} \\\\\\
 	#4
 }
 
@@ -116,16 +123,16 @@
 \newcommand{\letterend}[3]{
 	#1 \\
 	\vspace{0.5cm} \\
-	\rule{5cm}{0.4pt} \\
-	#2\namedatedelim #3\\\\
+	\rule{7cm}{0.4pt} \\[7pt]
+	{\normalsize #2\namedatedelim #3}\\\\
 }
 
 % Alternativ: Grußformel und Signatur als Bild
 \newcommand{\lettersig}[4]{
 	#1 \\[10pt]
 	\includegraphics[width=5cm]{#4} \\[-25pt]
-	\rule{5cm}{0.4pt} \\[10pt]
-	#2\namedatedelim #3\\\\
+	\rule{7cm}{0.4pt} \\[10pt]
+	{\normalsize #2\namedatedelim #3}\\\\
 }
 
 \RequirePackage{eso-pic} % Shipout-Hooks, damit TikZ Grafiken auf die Seite gezeichnet werden können

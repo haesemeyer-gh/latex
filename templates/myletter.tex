@@ -2,6 +2,8 @@
 
 \usepackage[main=ngerman,german,english]{babel}
 
+\pagenumbering{gobble} % Seitenzahlen deaktivieren
+
 %\letterfoldmarks % fügt Markierungen hinzu, die anzeigen, wo das Blatt gefaltet werden muss
 
 %\setmyname{Häsemeyer}
@@ -20,14 +22,15 @@
 
 \setplace{Ort}
 %\setletterdate{}
-\setlettertitle{Beispielbrief}
+\setlettertitle{Beispielbrief} % Bei größerer Schriftgröße, hier ebenfalls größe Setzen
 
-\setgreet{Hallo \toname!}
+\setgreet{\normalsize Hallo \toname!} % Schriftgröße hier Setzen
 \letterhead
 
 %\lipsum[1-10]
 
 \setbye{Mit freundlichen Grüßen}
+\siginstead{\large Häsemeyer}{\itshape\hspace{0.4cm} <haesemeyer@mailbox.org>} % alternative Signature Text
 \letterfoot{signature.png}
 %\letterfoot{} % freies Signaturenfeld, kein Bild
 
