@@ -102,7 +102,7 @@
 	\begin{flushright}
 	#1\placedatedelim #2 \medskip
 	\end{flushright}
-	{\large #3} \\\\\\
+	{\large\bfseries #3} \\\\\\
 	#4
 }
 
