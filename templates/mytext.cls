@@ -13,7 +13,7 @@
 \RequirePackage[T1]{fontenc}
 
 % Schriftarten
-\RequirePackage{tgpagella}
+\RequirePackage{libertinus}
 \RequirePackage{inconsolata}
 
 \RequirePackage{xcolor} % Farben
