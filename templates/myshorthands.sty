@@ -1,0 +1,54 @@
+\NeedsTeXFormat{LaTeX2e}
+
+\ProvidesPackage{myshorthands}[2026/05/15 Kurzschreibweisen für viele Befehle, importiert auch viele Pakete]
+
+% Dependencies
+
+\RequirePackage{xcolor} % Farben
+
+\RequirePackage{multicol} % mehrere Spalten Text
+\RequirePackage{float} % H Option für Positionierung von Tabellen, etc.
+
+\RequirePackage{listings} % Codeblöcke
+
+\RequirePackage{ulem} % Text Durchstreichen
+\RequirePackage{cancel} % Mathe Durchstreichen
+
+\RequirePackage{amsmath} % AMS TeX
+\RequirePackage{siunitx} % SI-Einheiten
+
+\RequirePackage{graphicx} % Einbinden von Bildern
+\RequirePackage{tikz} % Grafiken zeichnen
+\usetikzlibrary{calc}
+
+\RequirePackage{lipsum}
+\RequirePackage{blindtext}
+
+% Shorthands
+
+% Codeblöcke
+%TODO
+% Code-Dateien Importieren und als Codeblock anzeigen
+\newcommand{\codefile}[2]{
+	\lstinputlisting[language=#1]{#2}
+}
+% Inline-Code
+\newcommand{\code}[2]{
+	\lstinline[language=#1]{#2}
+}
+
+% Formatierungen
+\newcommand{\serif}[1]{\sffamily #1}
+\newcommand{\mono}[1]{\ttfamily #1}
+\newcommand{\bld}[1]{\bfseries #1}
+\newcommand{\itl}[1]{\itshape #1}
+\newcommand{\del}[1]{\color{red} \sout{#1}}
+\newcommand{\ins}[1]{\color{olive} #1}
+\newcommand{\aside}[1]{\color{gray} #1}
+
+% Tabellen
+%TODO
+
+% Bilder
+%TODO
+

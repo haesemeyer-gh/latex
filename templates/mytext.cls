@@ -16,13 +16,14 @@
 \RequirePackage{libertinus}
 \RequirePackage{inconsolata}
 
-\RequirePackage{xcolor} % Farben
+% weitere Pakete und Kurzschreibweisen
+\RequirePackage{myshorthands}
 
+% Hyperlinks (auch im Inhaltsverzeichnis)
 \RequirePackage[colorlinks=false, linkcolor=blue]{hyperref} % Hyperlinks (auch im Inhaltsverzeichnis)
 
-\RequirePackage{multicol} % mehrere Spalten Text
-
-\RequirePackage{listings} % für Codeblöcke
+% Codeblöcke
+\RequirePackage{listings}
 \lstdefinestyle{code}{
 	commentstyle=\color{red},
 	keywordstyle=\color{purple}\bfseries,
@@ -37,24 +38,9 @@
 }
 \lstset{style=code}
 
-\RequirePackage{ulem} % Text Durchstreichen
-\RequirePackage{cancel} % Mathe Durchstreichen
-
-\RequirePackage{amsmath} % AMS TeX
-
 % SI-Einheiten und mehr
 \RequirePackage{siunitx}
 \sisetup{
    output-decimal-marker = {,} % \num nutzt hiermit , als dezimalkomma
 }
-
-\RequirePackage{float} % H Option für Positionierung von Tabellen, etc.
-
-\RequirePackage{graphicx} % zum Einbinden von Bildern
-
-\RequirePackage{tikz} % Grafiken zeichnen
-\usetikzlibrary{calc}
-
-\RequirePackage{lipsum}
-\RequirePackage{blindtext}
 
