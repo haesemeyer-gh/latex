@@ -74,6 +74,7 @@
 % Eigene Kontaktdaten
 \newcommand{\letterme}[6]{
 	\begin{flushright}
+		{\setlength{\tabcolsep}{0mm}
 		\begin{tabular}{r}
 		{\bfseries #1} \\
 		#2 \\
@@ -82,6 +83,7 @@
 		#5 \\
 		#6 \\
 		\end{tabular}
+		}
 	\end{flushright}
 	\hrule \bigskip
 }
