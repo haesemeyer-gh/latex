@@ -25,7 +25,7 @@
 \RequirePackage{listings} % für Codeblöcke
 \lstdefinestyle{code}{
 	commentstyle=\color{red},
-	keywordstyle=\color{purple},
+	keywordstyle=\color{purple}\bfseries,
 	numberstyle=\color{darkgray},
 	stringstyle=\color{teal},
 	basicstyle=\ttfamily\footnotesize,

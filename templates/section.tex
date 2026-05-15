@@ -23,7 +23,9 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAA\-BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
 Nun ist dies wohl ein Zitat. Huh. \blindtext
 \end{quote}
 
-\begin{lstlisting}[language=go,caption=Beispiel-Programm in Go]
+\subsubsection{Regulärer Codeblock}
+
+\begin{lstlisting}[language=go,caption={Beispiel-Programm in Go},label={lst:golang_example}]
 for (int i = 0; i < len(arr); i++) {
 	// Kommentar
 	if (arr[i] == 1) {
@@ -31,6 +33,16 @@ for (int i = 0; i < len(arr); i++) {
 	}
 }
 \end{lstlisting}
+
+\subsubsection{Importierter Codeblock}
+
+\lstinputlisting[language=go]{testcode.go}
+
+\subsubsection{Inline Code}
+
+Dies ist \verb`inline code` mit \verb|verschiedenen| \verb+delimitern+.
+
+inline code \lstinline[language=go]`int i := 0` mit listing (syntax highlighting)
 
 \subsection{Mathematik}
 
@@ -98,10 +110,11 @@ This is an English section.
 
 \section{Tabellen}
 
-So sieht eine Tabelle aus:
+Siehe die Tabelle \ref{table:tolle_großartige_tabelle}.
 
 \begin{table}[tbh] % placement specifier
 	\caption{tolle großartige Tabelle}
+	\label{table:tolle_großartige_tabelle}
 	\centering
 	\setlength{\tabcolsep}{1em} % padding horizontal
 	\begin{tabular}{|c|ll||r|}
@@ -118,6 +131,16 @@ So sieht eine Tabelle aus:
 		1 & \multicolumn{2}{c||}{2, 3} & 4 \\
 		\hline
 		Laaaaang & sehr laaaaang & super laaaang & akjshdjasd \\
+		Laaaaang & sehr laaaaang & super laaaang & akjshdjasd \\
+		Laaaaang & sehr laaaaang & super laaaang & akjshdjasd \\
+		Laaaaang & sehr laaaaang & super laaaang & akjshdjasd \\
+		Laaaaang & sehr laaaaang & super laaaang & akjshdjasd \\
+		Laaaaang & sehr laaaaang & super laaaang & akjshdjasd \\
+		Laaaaang & sehr laaaaang & super laaaang & akjshdjasd \\
+		Laaaaang & sehr laaaaang & super laaaang & akjshdjasd \\
+		Laaaaang & sehr laaaaang & super laaaang & akjshdjasd \\
+		Laaaaang & sehr laaaaang & super laaaang & akjshdjasd \\
+		Laaaaang & sehr laaaaang & super laaaang & akjshdjasd \\
 		\hline
 	\end{tabular}
 \end{table}
@@ -132,6 +155,7 @@ Das war die Tabelle.
 	\centering
 	\includegraphics[width=\textwidth]{testimg.jpg} % width=0.5\textwidth
 	\caption{Ein Beispielbild: das Logo des LaTeX Project}
+	\label{table:latex_project_logo} % labels immer nach caption
 \end{figure}
 
 \includegraphics[scale=0.3]{testimg.jpg}
