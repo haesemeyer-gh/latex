@@ -63,8 +63,12 @@
 	\letterstart{\place}{\letterdate}{\lettertitle}{\greet}
 }
 
-\newcommand{\letterfoot}{
-	\letterend{\bye}{\myname}{\letterdate}
+\newcommand{\letterfoot}[1]{
+	\if\relax\detokenize{#1}\relax
+		\letterend{\bye}{\myname}{\letterdate}
+	\else
+		\lettersig{\bye}{\myname}{\letterdate}{#1}
+	\fi
 }
 
 % Eigene Kontaktdaten
@@ -111,6 +115,14 @@
 	#1 \\
 	\vspace{0.5cm} \\
 	\rule{5cm}{0.4pt} \\
+	#2\namedatedelim #3\\\\
+}
+
+% Alternativ: Grußformel und Signatur als Bild
+\newcommand{\lettersig}[4]{
+	#1 \\[10pt]
+	\includegraphics[width=5cm]{#4} \\[-25pt]
+	\rule{5cm}{0.4pt} \\[10pt]
 	#2\namedatedelim #3\\\\
 }
 
