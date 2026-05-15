@@ -126,3 +126,15 @@
 	#2\namedatedelim #3\\\\
 }
 
+\RequirePackage{eso-pic} % Shipout-Hooks, damit TikZ Grafiken auf die Seite gezeichnet werden können
+\newcommand{\letterfoldmarks}[1]{
+	\AddToShipoutPictureBG{
+		\AtPageUpperLeft{
+			\raisebox{-99mm}{\color{gray} \rule{3mm}{0.2pt}}
+		}
+		\AtPageUpperLeft{
+			\raisebox{-198mm}{\color{gray} \rule{3mm}{0.2pt}}
+		}
+	}
+}
+

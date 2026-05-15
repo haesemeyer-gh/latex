@@ -50,3 +50,9 @@
 
 \RequirePackage{graphicx} % zum Einbinden von Bildern
 
+\RequirePackage{tikz} % Grafiken zeichnen
+\usetikzlibrary{calc}
+
+\RequirePackage{lipsum}
+\RequirePackage{blindtext}
+
