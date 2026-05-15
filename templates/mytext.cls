@@ -48,6 +48,8 @@
    output-decimal-marker = {,} % \num nutzt hiermit , als dezimalkomma
 }
 
+\RequirePackage{float} % H Option für Positionierung von Tabellen, etc.
+
 \RequirePackage{graphicx} % zum Einbinden von Bildern
 
 \RequirePackage{tikz} % Grafiken zeichnen
