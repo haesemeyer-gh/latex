@@ -1,21 +1,12 @@
 \NeedsTeXFormat{LaTeX2e}
 
-\ProvidesClass{myarticle}[2026/05/15 Mein Artikel auf DIN-A4 Papier]
+\ProvidesClass{mytext}[2026/05/15 Basis-Klasse für alle meine Texte]
 
 \LoadClass{article} % extends
 
 % Indentierung und Abstand neuer Absätze
 \setlength{\parindent}{0pt}
 \setlength{\parskip}{6pt}
-
-% Papierformatierung
-\RequirePackage[
-	left=25mm,
-	right=25mm,
-	top=20mm,
-	bottom=25mm,
-	paper=a4paper
-]{geometry}
 
 % Schriftart und Eingabe Encodieren
 \RequirePackage[utf8]{inputenc}

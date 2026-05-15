@@ -8,7 +8,3 @@
 for i in {1..3}; do pdflatex myarticle.tex; done
 ```
 
-## TODO
-
-- [ ] Briefkopf für `myarticle`
-
