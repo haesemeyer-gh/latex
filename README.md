@@ -32,10 +32,3 @@ Folgende Dateien zeigen einige Beispiele für die Anwendung dieser Templates:
 - `myletter.tex`
 - `mycv.tex`
 
-## Notizen
-
-`pdflatex` muss, wenn es ein inhaltsverzeichnis gibt, das dokument mehrmals kompilieren, damit der table of contents korrekt generiert wird:
-```sh
-for i in {1..3}; do pdflatex myarticle.tex; done
-```
-
