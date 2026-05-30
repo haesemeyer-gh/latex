@@ -4,13 +4,17 @@
 
 \LoadClass{article} % extends
 
-% Indentierung und Abstand neuer Absätze
+% Indentierung, Abstand neuer Absätze und Zeilenabstand
 \setlength{\parindent}{0pt}
 \setlength{\parskip}{6pt}
+%\linespread{1.5}\selectfont % (oder in {})
 
 % Schriftart und Eingabe Encodieren
-\RequirePackage[utf8]{inputenc}
-\RequirePackage[T1]{fontenc}
+% pdfLaTeX
+%\RequirePackage[utf8]{inputenc}
+%\RequirePackage[T1]{fontenc}
+% LuaLaTeX
+\RequirePackage{fontspec}
 
 % Schriftarten
 \RequirePackage{libertinus}
@@ -21,6 +25,12 @@
 
 % Hyperlinks (auch im Inhaltsverzeichnis)
 \RequirePackage[colorlinks=false, linkcolor=blue]{hyperref} % Hyperlinks (auch im Inhaltsverzeichnis)
+
+% Mikrotypographie
+\RequirePackage{microtype}
+
+% Anführungszeichen
+\RequirePackage[autostyle,german=quotes,english=american]{csquotes}
 
 % Codeblöcke
 \RequirePackage{listings}
@@ -43,4 +53,11 @@
 \sisetup{
    output-decimal-marker = {,} % \num nutzt hiermit , als dezimalkomma
 }
+
+% genormtes Eurozeichen immer verwenden
+\RequirePackage{eurosym}
+\let\texteuro\officialeuro
+% kompatibilität
+\catcode`\€=\active
+\def €{\officialeuro}
 

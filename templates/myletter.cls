@@ -83,7 +83,7 @@
 	\begin{flushright}
 		{\setlength{\tabcolsep}{0mm}
 		\begin{tabular}{r}
-		{\bfseries #1} \\
+		\textbf{#1} \\
 		#2 \\
 		#3 \\
 		#4 \\
@@ -102,7 +102,7 @@
 
 % Adresse
 \newcommand{\letteradress}[6]{
-	{\bfseries #1} \\
+	\textbf{#1} \\
 	#2 \\
 	#3 \\
 	#4 \\
@@ -113,9 +113,9 @@
 % Ort, Datum, Betreff und Anrede
 \newcommand{\letterstart}[4]{
 	\begin{flushright}
-	#1\placedatedelim #2 \medskip
+	#1\placedatedelim #2\medskip
 	\end{flushright}
-	{\large\bfseries \underline{#3}} \\\\\\
+	{\large\textbf{\underline{#3}}} \\\\\\
 	#4
 }
 

@@ -32,3 +32,7 @@ Folgende Dateien zeigen einige Beispiele für die Anwendung dieser Templates:
 - `myletter.tex`
 - `mycv.tex`
 
+#### Umgebung
+
+- `.latexmk` gibt Konfigurationen für `latexmk` vor, in diesem Fall, dass mit LuaLaTeX kompiliert werden soll.
+

@@ -1,4 +1,5 @@
 *.pdf
+*.dvi
 *.aux
 *.log
 *.toc
@@ -6,4 +7,6 @@
 *.synctex.gz
 *.fls
 *.fdb_latexmk
+
+*.veryspecial.tex
 

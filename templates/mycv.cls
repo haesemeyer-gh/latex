@@ -29,7 +29,7 @@
 \newcommand{\cvsection}[1]{
 	\section*{
 		\LARGE #1 \\[-15pt]
-		\rule{\textwidth}{2pt} \\[-35pt]
+		\rule{\textwidth}{2pt} \\[-38pt]
 	}
 }
 
@@ -47,6 +47,7 @@
 
 % Itemizations mit wenig Abstand für Tabellen
 \newcommand{\cvitemize}[1]{
+	\vspace{-0.4em}
 	\begin{itemize}
 		\setlength\itemsep{-0.2em}
 		#1

@@ -4,9 +4,28 @@
 
 \subsection{Tippkonventionen}
 
+Eine~unbreakable~Leerzeile~mit~Tilde. praktisch.
+Und un"~breakable Bindestriche!
+
 Dr.\ Doktor schreibt man mit \verb`.\ `, sodaß der Punkt nicht zu viel Platz läßt.
 
-Dies ist ein "`wunderschöner Text"', 'sehr' toll ist -- das freut mich.
+[{\itshape f}]
+
+[{\itshape f\/}]
+
+[\textit{f}]
+
+\enquote{Dies ist ein csquotes-Zitat \enquote{wie dieses!}}
+
+Schifffahrt
+
+Tiefflieger falsche Ligatur
+
+Tief"|flieger
+
+\foreignlanguage{english}{\enquote{another one of csquotes` quotes with american apostrophe \enquote{in english!}}}
+
+Dies ist ein "`wunderschöner Text"', der \glq sehr\grq toll ist -- das freut mich.
 
 ``curly'' und \frqq {\em französisch}\flqq
 
@@ -43,7 +62,9 @@ und außerdem mit \code{go}{shorthand}
 
 \subsection{Mathematik}
 
-23409823942,00€
+23409823942,00~€
+
+0,--~\officialeuro \ (genormtes Eurozeichen)
 
 $3409823942.00$
 
@@ -88,17 +109,19 @@ This is an English section.
 
 \subsection{Font Families}
 
-\begin{itemize}
-	\item {\serif Sans-Serif}
-	\item {\mono Typewriter}
-\end{itemize}
+\begin{enumerate}
+	\item[C)] \textrm{Roman}
+	\item[A)] \textsf{Sans-Serif}
+	\item[B)] \texttt{Typewriter}
+\end{enumerate}
 
 \subsection{Formatierung}
 
 \begin{itemize}
-	\item {\bld Bold} \\ Neue Zeilen in Auflistung
-	\item {\itl kursiv}
-	\item {\em emphasis}
+	\item \textbf{Bold} \\ Neue Zeilen in Auflistung
+	\item \textit{Italics}
+	\item \textbackslash em emphasis funktioniert nicht mit microtype paket in einer auflistung??? % {\em emphasis}
+	\item \textsc{Smallcaps}
 	\item \underline{unterstrichen}
 	\item {\color{red} \sout{strikethrough} \xout{xout} + Farbe}
 	\item {\del{shorthand}} a {\ins insertion} b {\aside (aus myshorthands.sty)} c
